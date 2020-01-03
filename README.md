@@ -41,7 +41,7 @@ First, make sure that you have the following dependencies:
 [GitHub API token]: https://github.com/settings/tokens
 [macos-gnu]: https://github.com/sourcecred/sourcecred/issues/698#issuecomment-417202213
 
-You'll stil need to create a GitHub token to use as an environment variable (shown later). First, run the following commands to clone and build SourceCred:
+You'll stil need to create a GitHub token to use as an environment variable (shown later). First, run the following commands to clone and build SourceCred:sourcecred
 
 ```Bash
 git clone https://github.com/sourcecred/sourcecred.git
@@ -51,7 +51,7 @@ yarn backend
 node bin/sourcecred.js load REPO_OWNER/REPO_NAME
 ```
 
-Loading a repo can take a few minutes. When it is finished, it will exit. Next, we can start sourcecred:
+Loading a repo can take a few minutes. When it is finished, it will exit. Next, we can start SourceCred:
 
 ```Bash
 yarn start
@@ -71,6 +71,7 @@ git clone https://github.com/sourcecred/sourcecred.git
 cd sourcecred
 yarn install
 yarn backend
+export SOURCECRED_GITHUB_TOKEN=YOUR_GITHUB_TOKEN
 node bin/sourcecred.js discourse https://discourse.sourcecred.io
 ```
 
